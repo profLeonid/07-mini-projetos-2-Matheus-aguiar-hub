@@ -39,10 +39,11 @@ function criarTabela() {
         const tr = document.createElement('tr')
 
         const dadosLinha = [
+            i,
     calcularAdicao(i,numero),
     calcularSubtracao(i,numero),
     calcularMultiplicacao(i,numero),
-    calcularDivisao(i,numero)
+    calcularDivisao(i,numero).toFixed(2)
         ]
 
         dadosLinha.forEach(texto => {
